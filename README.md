@@ -1,10 +1,20 @@
-Sinatra
+Midterm!
 =============
 
-Brought to you by Lighthouse Labs
+Members:
+Ko
+Dustin
+Christian
 
-## Getting Started
+Work devision
 
-1. `bundle install`
-2. `shotgun -p 3000 -o 0.0.0.0`
-3. Visit `http://localhost:3000/` in your browser
+Front end
+------------
+
+
+UI interface?/experiance?
+-----------
+
+
+Back end
+------------
