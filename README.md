@@ -2,8 +2,8 @@ Midterm!
 =============
 
 Members:
-Ko
-Dustin
+Ko, 
+Dustin, 
 Christian
 
 Work devision
