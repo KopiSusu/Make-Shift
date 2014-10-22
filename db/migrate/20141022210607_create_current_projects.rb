@@ -1,4 +1,4 @@
-class CreateCurrentProject < ActiveRecord::Migration
+class CreateCurrentProjects < ActiveRecord::Migration
   def change
     create_table :current_projects do |t|
       t.belongs_to :project
