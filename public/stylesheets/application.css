@@ -19,10 +19,10 @@ body {
   width: 190px;
 }
 
-.navitem:hover {
+/*.navitem:hover {
   height: 400px;
   transition: all 0.3s linear;
-}
+}*/
 
 
 .navbar {
@@ -62,10 +62,10 @@ input {
   transition: all 0.3s linear;
 }
 
-input:hover {
+/*input:hover {
   opacity:0.5;
   transition: all 0.3s linear;
-}
+}*/
 
 ::-webkit-input-placeholder {
   color: black;
@@ -104,7 +104,7 @@ transform: rotate(180deg);
 /*Bottom bar at the bottom of all screens*/
 
 .container.main{
-  z-index: -1;
+  z-index: 0;
   position: fixed;
   width: 1170px;
   height: 100%;
@@ -129,7 +129,7 @@ transform: rotate(180deg);
   top: 88%;
   left: 2%;
   border-radius: 20px;
-  z-index: 0;
+  z-index: 1000;
 }
 
 
@@ -202,6 +202,8 @@ transition: transform 0.3s ease-out 0.1s;
   height: 91%;
   transition: all 0.5s ease-out
 }
+
+
 
 
 
