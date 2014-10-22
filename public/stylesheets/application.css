@@ -1,0 +1,207 @@
+/*Search bar at the top of all screens*/
+body {
+  background: #FFFFFD;
+  background-position: center;
+}
+
+.leftborder{
+  border-left: solid 5px black; 
+  float: right;
+}
+
+.rightborder{
+  border-right: solid 5px black; 
+}
+
+.navitem {
+  height: 25px;
+  transition: all 0.3s linear;
+  width: 190px;
+}
+
+.navitem:hover {
+  height: 400px;
+  transition: all 0.3s linear;
+}
+
+
+.navbar {
+  list-style-type: none;
+  width: 95%;
+  border-top: solid 5px black; 
+  margin-top: 1%;
+  margin-left: 5%;
+  padding-left: 0;
+}
+
+.navbar li {
+  display:inline-block;
+  padding: 5px;
+  color: black;
+  font-family: arial;
+  font-weight: bold;
+}
+
+.navbar li a{
+  color: black;
+  font-family: arial;
+  position: relative;
+  left: 0%;
+  width: 98.5%;
+  font-size: 17px;
+  text-align: center;
+  background: transparent;
+  border: 1px solid transparent;
+}
+
+input {
+  line-height: normal;
+  background: transparent;
+  border: 1px solid transparent;
+  text-align: center;
+  transition: all 0.3s linear;
+}
+
+input:hover {
+  opacity:0.5;
+  transition: all 0.3s linear;
+}
+
+::-webkit-input-placeholder {
+  color: black;
+  font-family: arial;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.image {
+background-image: url("http://simpleicon.com/wp-content/uploads/light-bulb-3-64x64.png");
+position: fixed;
+height: 6.8%;
+width: 4%;
+left: 62%;
+transform: rotate(180deg);
+}
+
+.image1 {
+background-image: url("http://simpleicon.com/wp-content/uploads/light-bulb-3-64x64.png");
+position: fixed;
+height: 6.8%;
+width: 4%;
+left: 74%;
+transform: rotate(180deg);
+}
+
+.image2 {
+background-image: url("http://simpleicon.com/wp-content/uploads/light-bulb-3-64x64.png");
+position: fixed;
+height: 6.8%;
+width: 4%;
+left: 86%;
+transform: rotate(180deg);
+}
+
+/*Bottom bar at the bottom of all screens*/
+
+.container.main{
+  z-index: -1;
+  position: fixed;
+  width: 1170px;
+  height: 100%;
+  width: 100%;
+  top: 0%
+}
+
+.glass {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #0A516D;
+  -webkit-filter: url('#blur');
+  filter: url('#blur');
+  -webkit-filter: blur(0px);
+  filter: blur(0px);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  opacity: 1;
+  top: 88%;
+  left: 2%;
+  border-radius: 20px;
+  z-index: 0;
+}
+
+
+.preload * {
+  transition: none !important;
+}
+
+.glass.up, .glass.up::before {
+  transform: translateY(0);
+  transform: translateY(0) translateZ(0);
+}
+
+.glass, .glass::before {
+  transition: all 0.5s ease-out
+}
+
+.up {
+  top: 7%;
+  height: 100%;
+  transition: all 0.5s ease-out
+}
+
+.toggle {
+position: absolute;
+left: 1.1%;
+top: -1.5%;
+background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/28727/double-chevron-up.svg');
+content: ' ';
+display: block;
+width: 5.7rem;
+height: 6rem;
+opacity: 0.9;
+cursor: pointer;
+transition: transform 0.3s ease-out 0.1s;
+}
+
+.aftertoggle {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease-out 0.5s;  
+}
+
+.togglebottom {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: black;
+  background-color: #FFFFFD;
+  top: 94%;
+  left: 4.6%;
+  opacity: 1;
+  z-index: 1;
+  margin-left: -10px;
+}
+
+.side{
+  z-index: -1;
+  position: absolute;
+  width: 71px;
+  height: 10%;
+  border: solid 3px #FFFFFD;
+  left: 1.1%;
+  top: 1.2%;
+  border-radius: 10px;
+  transition: all 0.5s ease-out
+}
+
+.sideup{
+  height: 91%;
+  transition: all 0.5s ease-out
+}
+
+
+

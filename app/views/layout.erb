@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+  <!-- Optional theme -->
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"> -->
+
+  <!-- Latest compiled and minified JavaScript -->
+  <!-- // <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> -->
   <!--
     normalize.css removes cross-browser differences in defaults, e.g.,
     differences in how form elements appear between Firefox and IE
@@ -12,12 +20,50 @@
   -->
   <link rel="stylesheet" href="/stylesheets/application.css">
 
+  <link href='http://fonts.googleapis.com/css?family=Megrim' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Tenor+Sans' rel='stylesheet' type='text/css'>
+
+
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="/javascript/application.js"></script>
 
   <title></title>
 </head>
-<body>
+<body> 
+  <ul class="navbar">
+    <li class="rightborder">
+      <input type="text" placeholder=" SEARCH..." name="somefield" /> 
+    </li>
+    <li class="leftborder">
+      <div class="navitem">
+        <a href="#">MY PROJECTS</a>
+      </div>
+      <div class="image2"></div>
+    </li>
+    <li class="leftborder">
+      <div class="navitem">
+        <a href="#">FIND PROJECTS</a>
+      </div>
+      <div class="image1"></div>
+    </li>
+    <li class="leftborder">
+      <div class="navitem">
+        <a href="#">LOGIN</a>
+      </div>
+      <div class="image"></div>
+    </li>
+  </ul>
   <%= yield %>
+  <div class="togglebottom"></div>
+  <div class="container main">
+    <article class='glass'>
+      <h1 class='toggle'></h1>
+      <div class='side'></div>
+    </article>
+  </div>
 </body>
 </html>
+
+
+
+

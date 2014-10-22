@@ -1,4 +1,30 @@
 $(document).ready(function() {
+  var glassUp = false;
 
-  // See: http://docs.jquery.com/Tutorials:Introducing_$(document).ready()
+  $( ".toggle" ).click(function() {
+
+    if (glassUp) {
+
+      $( ".toggle").removeClass("aftertoggle")
+
+      setTimeout(function() {
+        $( ".glass" ).removeClass("up");
+
+        $(".side").removeClass("sideup");
+
+      }, 400);
+
+      glassUp = false;
+
+    } else {
+      $( ".toggle").addClass("aftertoggle")
+
+      $( ".glass" ).addClass("up");
+
+      $(".side").addClass("sideup");
+
+      glassUp = true;
+    }
+  });
+
 });
