@@ -12,3 +12,7 @@ get '/find' do
   erb :'projects/find'
 end
 
+get '/login' do
+  erb :'projects/login'
+end
+
