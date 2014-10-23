@@ -206,7 +206,33 @@ input:hover {
   transition: all 0.5s ease-out
 }
 
-/*logo for index page*/
+/*Dustin's Motherfuckin' Shit */
+
+.panel.panel-default.one {
+  border: 6px solid #1E4E66;
+  border-radius: 5px;
+  height: 350px;
+  margin-left: 35px;
+}
+
+.panel.panel-default.two {
+  border: 6px solid #1E4E66;
+  border-radius: 5px;
+  height: 450px;
+  margin-left: 35px;
+
+}
+
+.container.product_page {
+  border: 6px solid black;
+  border-radius: 5px;
+  float: right;
+  width: 720px;
+  height: 800px;
+  margin-right: 65px;
+}
+
+/*logo*/
 
 .curved-text {
 position: absolute;
