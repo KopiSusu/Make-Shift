@@ -32,6 +32,7 @@ body {
   margin-top: 1%;
   margin-left: 5%;
   padding-left: 0;
+  z-index: 3;
 }
 
 .navbar li {
@@ -62,10 +63,10 @@ input {
   transition: all 0.3s linear;
 }
 
-/*input:hover {
+input:hover {
   opacity:0.5;
   transition: all 0.3s linear;
-}*/
+}
 
 ::-webkit-input-placeholder {
   color: black;
@@ -75,30 +76,30 @@ input {
 }
 
 .image {
-background-image: url("http://simpleicon.com/wp-content/uploads/light-bulb-3-64x64.png");
-position: fixed;
-height: 6.8%;
-width: 4%;
-left: 62%;
-transform: rotate(180deg);
+  background-image: url("http://simpleicon.com/wp-content/uploads/light-bulb-3-64x64.png");
+  position: fixed;
+  height: 6.8%;
+  width: 4%;
+  left: 62%;
+  transform: rotate(180deg);
 }
 
 .image1 {
-background-image: url("http://simpleicon.com/wp-content/uploads/light-bulb-3-64x64.png");
-position: fixed;
-height: 6.8%;
-width: 4%;
-left: 74%;
-transform: rotate(180deg);
+  background-image: url("http://simpleicon.com/wp-content/uploads/light-bulb-3-64x64.png");
+  position: fixed;
+  height: 6.8%;
+  width: 4%;
+  left: 74%;
+  transform: rotate(180deg);
 }
 
 .image2 {
-background-image: url("http://simpleicon.com/wp-content/uploads/light-bulb-3-64x64.png");
-position: fixed;
-height: 6.8%;
-width: 4%;
-left: 86%;
-transform: rotate(180deg);
+  background-image: url("http://simpleicon.com/wp-content/uploads/light-bulb-3-64x64.png");
+  position: fixed;
+  height: 6.8%;
+  width: 4%;
+  left: 86%;
+  transform: rotate(180deg);
 }
 
 /*Bottom bar at the bottom of all screens*/
@@ -153,17 +154,17 @@ transform: rotate(180deg);
 }
 
 .toggle {
-position: absolute;
-left: 1.1%;
-top: -1.5%;
-background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/28727/double-chevron-up.svg');
-content: ' ';
-display: block;
-width: 5.7rem;
-height: 6rem;
-opacity: 0.9;
-cursor: pointer;
-transition: transform 0.3s ease-out 0.1s;
+  position: absolute;
+  left: 1.1%;
+  top: -1.5%;
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/28727/double-chevron-up.svg');
+  content: ' ';
+  display: block;
+  width: 5.7rem;
+  height: 6rem;
+  opacity: 0.9;
+  cursor: pointer;
+  transition: transform 0.3s ease-out 0.1s;
 }
 
 .aftertoggle {
