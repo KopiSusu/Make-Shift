@@ -30,11 +30,12 @@ body {
   list-style-type: none;
   width: 1192px;
   border-top: solid 3px black;
-  margin-left: 141px;
+  margin-left: 90px;
   padding-left: 0;
   margin-top: 10px;
   z-index: 3;
   position: fixed;
+  border-radius: 0;
 }
 
 .navbar li {
@@ -70,12 +71,20 @@ input:hover {
   transition: all 0.3s linear;
 }
 
-::-webkit-input-placeholder {
-  color: black;
-  font-family: arial;
-  font-weight: bold;
-  font-size: 17px;
+.menu {
+  color: #FFF;
+  height: 2em;
+  padding: .5em;
+  position: absolute;
+  top: 0px;
+  width: 100%;
 }
+
+.fixed {
+  position: absolute;
+  top: 22px;
+}
+
 
 /*.image {
   background-image: url("http://www.iconsdownload.net/icons/24/6606-light-bulb-off.png");
@@ -330,25 +339,33 @@ height: 20%;
 
 /*chris stuff*/
 
-.row-padded{
+.find2{
+  position: absolute;
   padding: 35px;
   background-color: #FFFFFD;
-  border: 1px solid #DDD;
+  border-left: 3px solid black;
+  border-top: 3px solid black;
+  left: 344px;
+  height: 510px;
+  width: 800px;
 }
 
-.border-radius {
-  border-radius: 5px; 
--moz-border-radius: 5px; 
--webkit-border-radius: 5px; 
-border: 2px solid #0A516D;
-}
-
-.row {
-  margin-top: 100px;
-margin-right: 100px;
-margin-left: 100px;
+.find1 {
 position: absolute;
-z-index: 1;
+border-right: 3px solid #0A516D;
+border-top: 3px solid #0A516D;
+padding-top: 15px;
+height: 510px;
+}
+
+.row.find {
+  margin-top: 75px;
+  margin-right: 100px;
+  margin-left: 100px;
+  position: absolute;
+  z-index: 1;
+  width: 1000px;
+  height: 300px;
 }
 
 
@@ -360,20 +377,20 @@ z-index: 1;
 }
 
 .login {
-  border-right: 3px solid black;
+border-right: 3px solid black;
 border-bottom: 3px solid black;
 top: 48px;
-left: 0px;
+left: 7px;
 position: absolute;
-width: 929px;
-height: 380px
+width: 878px;
+height: 380px;
 }
 
 .username {
 position: absolute;
-width: 52%;
-padding-left: 20%;
-padding-right: 20%;
+width: 360px;
+padding-left: 10px;
+padding-right: 10px;
 left: 390px;
 top: 277px;
 border-color: black;
@@ -383,9 +400,9 @@ z-index: 1;
 
 .password {
 position: absolute;
-width: 52%;
-padding-left: 20%;
-padding-right: 20%;
+width: 360px;
+padding-left: 10px;
+padding-right: 10px;
 left: 390px;
 top: 315px;
 border-color: black;
@@ -396,7 +413,7 @@ z-index: 1;
 .sidebutton {
 transform: rotate(90deg);
 position: absolute;
-left: 852px;
+left: 730px;
 top: 300px;
 width: 74px;
 border-radius: 5px;
@@ -411,7 +428,7 @@ width: 109px;
 padding-left: 581px;
 padding-top: 126px;
 border: solid;
-left: 342px;
+left: 291px;
 top: 228px;
 position: absolute;
 }
