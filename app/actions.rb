@@ -10,6 +10,7 @@ get '/' do
 end
 
 get '/project' do
+  @projects = Project.all
   erb :'projects/project'
 end
 
@@ -37,5 +38,10 @@ post '/login' do
   else
     redirect '/login'
   end
+end
+
+get '/project/:id' do
+  @projects = Project.find(params[:id])
+  erb :'projects/project'
 end
 
