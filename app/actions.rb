@@ -18,9 +18,14 @@ get'/create' do
   erb :'projects/create'
 end
 
-
 get '/find' do
+	@material = Material.all
   erb :'projects/find'
+  
+end
+
+get '/project' do
+  erb :'projects/project'
 end
 
 get '/login' do
