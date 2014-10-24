@@ -261,11 +261,11 @@ transition: transform 0.5s ease-out;
 }
 
 .curved-text-under {
-position: relative;
+position: absolute;
 color: black;
 font-family: arial;
 font-size: 60px;
-left: 48px;
+left: 47px;
 top: 56px;
 width: 100%;
 text-align: center;
@@ -274,11 +274,11 @@ transition: transform 0.5s ease-out;
 
 
 .left_side {
-position: relative;
+position: absolute;
 width: 260px;
 height: 3px;
-top: -20px;
-right: -1px;
+top: 76px;
+right: -5px;
 margin: auto;
 border-style: solid;
 border-color: black;
@@ -288,11 +288,11 @@ transition: transform 0.5s ease-out;
 
 
 .right_side {
-position: relative;
+position: absolute;
 width: 85px;
 height: 44px;
-left: -84px;
-top: -17px;
+left: 1px;
+top: 85px;
 margin: auto;
 border-style: solid;
 background: black;
@@ -302,11 +302,11 @@ transition: transform 0.5s ease-out;
 
 
 .outer-rim {
-position: relative;
+position: absolute;
 width: 90px;
 height: 44px;
-left: 88px;
-top: -117px;
+left: 171px;
+top: 29px;
 margin: auto;
 background: black;
 transition: transform 0.5s ease-out;
@@ -404,15 +404,67 @@ z-index: 1;
 }
 
 .login-title {
-  width: 109px;
-padding-left: 561px;
+width: 109px;
+padding-left: 581px;
 padding-top: 126px;
 border: solid;
-left: 362px;
+left: 342px;
 top: 228px;
 position: absolute;
 }
 
+.in {
+  font-size: 17px;
+  color: #FF9D2E;
+  font-family: Megrim;
+  padding-left: 50px;
+}
+
+/*create page*/
+
+.panel.panel-default.create1 {
+  border:none;
+  border-right: 3px solid #1E4E66;
+  border-bottom: 3px solid #1E4E66;
+  border-radius: 0px;
+  height: 350px;
+  margin-left: 35px;
+  background: #FFFFFD;
+}
+
+.panel.panel-default.create2 {
+  border:none;
+  border-right: 3px solid #1E4E66;
+  border-top: 3px solid #1E4E66;
+  border-radius: 0px;
+  height: 350px;
+  margin-left: 35px;
+  background: #FFFFFD;
+}
+
+.container.create_page {
+  border-left: 3px solid black;
+  border-top: 3px solid black;
+  border-radius: 0px;
+  float: right;
+  width: 720px;
+  height: 720px;
+  margin-right: 39px;
+}
+
+
+.textbox { 
+    border: 1px solid #848484; 
+    -webkit-border-radius: 30px; 
+    -moz-border-radius: 30px; 
+    border-radius: 30px; 
+    outline:0; 
+    height:25px; 
+    width: 275px; 
+    padding-left:10px; 
+    padding-right:10px; 
+    margin-top: 10px;
+  } 
 
 
 

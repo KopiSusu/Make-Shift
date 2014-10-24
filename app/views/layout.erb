@@ -32,7 +32,9 @@
 <body> 
   <ul class="navbar">
     <li class="rightborder">
-      <input type="text" placeholder=" SEARCH..." name="somefield" /> 
+      <div class="navitem in">
+        <%=session[:user]%>
+      </div>
     </li>
     <li class="leftborder">
       <div class="navitem">

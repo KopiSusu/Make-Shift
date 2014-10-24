@@ -3,7 +3,7 @@ class CreateProjects < ActiveRecord::Migration
     create_table :projects do |t|
       t.string :name
       t.integer :rating
-      t.binary :photo
+      t.string :photo
       t.timestamps
     end
   end
