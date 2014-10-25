@@ -1,23 +1,29 @@
 /*Search bar at the top of all screens*/
 body {
-  background: #FFFFFD;
+  /*background: white;*/
+  background: url(http://www.guillaumebouvet.com/assets/w1200-q85-p1/bg_home.jpg);
   background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    font-color: #ff6759;
 }
 
 .leftborder{
-  border-left: solid 3px black; 
+  border-left: solid 3px white; 
   float: right;
 }
 
 .rightborder{
-  border-right: solid 3px black; 
+  border-right: solid 3px white; 
 }
 
 .navitem {
-  height: 25px;
-  transition: all 0.3s linear;
-  width: 190px;
-  z-index: -1;
+height: 25px;
+transition: all 0.3s linear;
+width: 190px;
+z-index: -1;
+background: white;
 }
 
 /*.navitem:hover {
@@ -27,35 +33,36 @@ body {
 
 
 .navbar {
-  list-style-type: none;
-  width: 1192px;
-  border-top: solid 3px black;
-  margin-left: 90px;
-  padding-left: 0;
-  margin-top: 10px;
-  z-index: 3;
-  position: fixed;
-  border-radius: 0;
+list-style-type: none;
+width: 1204px;
+border-top: solid 3px white;
+margin-left: 31px;
+padding-left: 0;
+margin-top: 10px;
+z-index: 3;
+position: fixed;
+border-radius: 0;
 }
 
 .navbar li {
   display:inline-block;
   padding: 5px;
-  color: black;
-  font-family: arial;
+  color: white;
+  font-family: Droid Sans Mono;
   font-weight: bold;
 }
 
 .navbar li a{
-  color: black;
-  font-family: arial;
-  position: relative;
-  left: 0%;
-  width: 98.5%;
-  font-size: 17px;
-  text-align: center;
-  background: transparent;
-  border: 1px solid transparent;
+color: #424242;
+font-family: Droid Sans Mono;
+position: relative;
+left: 4%;
+top: 5%;
+width: 98.5%;
+font-size: 17px;
+text-align: center;
+background: transparent;
+border: 1px solid transparent;
 }
 
 input {
@@ -128,7 +135,7 @@ top: 85%;
 position: absolute;
 height: 100%;
 width: 100%;
-background: #0A516D;
+background: white;
 -webkit-filter: url('#blur');
 filter: url('#blur');
 -webkit-filter: blur(0px);
@@ -138,8 +145,8 @@ background-repeat: no-repeat;
 background-attachment: fixed;
 background-position: center;
 opacity: 1;
-top: 20%;
-left: 30px;
+top: 65%;
+left: 20px;
 border-radius: 20px;
 z-index: 1000;
 }
@@ -163,7 +170,7 @@ z-index: 1000;
   transition: all 0.5s ease-out
 }
 
-.toggle {
+/*.toggle {
   position: absolute;
   left: -4px;
   top: -30px;
@@ -175,9 +182,9 @@ z-index: 1000;
   opacity: 0.9;
   cursor: pointer;
   transition: transform 0.3s ease-out 0.1s;
-}
+}*/
 
-.aftertoggle {
+/*.aftertoggle {
   transform: rotate(180deg);
   transition: transform 0.3s ease-out 0.5s; 
 }
@@ -196,7 +203,7 @@ z-index: 1000;
   z-index: 1;
   margin-left: -10px;
   transition: all 0.5s ease-out;
-}
+}*/
 
 .side {
   z-index: -1;
@@ -204,7 +211,7 @@ z-index: 1000;
   width: 56px;
   height: 70px;
   border: solid 3px #FFFFFD;
-  left: 1.1%;
+  left: 2.1%;
   top: 8px;
   border-radius: 10px;
   transition: all 0.5s ease-out;
@@ -219,8 +226,6 @@ z-index: 1000;
 
 .panel.panel-default.one {
 border: none;
-border-right: 3px solid #1E4E66;
-border-bottom: 3px solid #1E4E66;
 border-radius: 0px;
 margin-left: 35px;
 background: #FFFFFD;
@@ -229,8 +234,6 @@ padding-bottom: 7px;
 
 .panel.panel-default.two {
   border:none;
-  border-right: 3px solid #1E4E66;
-  border-top: 3px solid #1E4E66;
   border-radius: 0px;
   height: 450px;
   margin-left: 35px;
@@ -238,19 +241,22 @@ padding-bottom: 7px;
 }
 
 .container.product_page {
-  border-left: 3px solid black;
-  border-top: 3px solid black;
-  border-radius: 0px;
-  float: right;
-  width: 720px;
-  height: 819px;
-  margin-right: 39px;
+border-radius: 0px;
+float: right;
+width: 720px;
+height: 819px;
+margin-right: 35px;
+background: #E9E9E9;
 }
 
 .container.overall {
-  padding-top: 70px;
-  padding-bottom: 100px;
-  border-radius: 5px;
+padding-top: 70px;
+padding-bottom: 100px;
+border-radius: 5px;
+border: solid white;
+top: 70px;
+left: 55px;
+position: absolute;
 }
 
 
@@ -259,7 +265,7 @@ padding-bottom: 7px;
 
 .curved-text {
 position: absolute;
-color: black;
+color: white;
 font-family: arial;
 font-size: 60px;
 left: -45px;
@@ -271,7 +277,7 @@ transition: transform 0.5s ease-out;
 
 .curved-text-under {
 position: absolute;
-color: black;
+color: white;
 font-family: arial;
 font-size: 60px;
 left: 47px;
@@ -290,8 +296,8 @@ top: 76px;
 right: -5px;
 margin: auto;
 border-style: solid;
-border-color: black;
-background: black;
+border-color: white;
+background: white;
 transition: transform 0.5s ease-out;
 }
 
@@ -304,8 +310,8 @@ left: 1px;
 top: 85px;
 margin: auto;
 border-style: solid;
-background: black;
-border-color: black;
+background: white;
+border-color: white;
 transition: transform 0.5s ease-out;
 }
 
@@ -317,7 +323,7 @@ height: 44px;
 left: 171px;
 top: 29px;
 margin: auto;
-background: black;
+background: white;
 transition: transform 0.5s ease-out;
 }
 
@@ -337,37 +343,46 @@ margin-bottom: 40%;
 height: 20%;
 }
 
+
+
 /*chris stuff*/
 
-.find2{
-  position: absolute;
-  padding: 35px;
-  background-color: #FFFFFD;
-  border-left: 3px solid black;
-  border-top: 3px solid black;
-  left: 344px;
-  height: 510px;
-  width: 800px;
-}
 
 .find1 {
 position: absolute;
-border-right: 3px solid #0A516D;
-border-top: 3px solid #0A516D;
+border: 3px solid white;
 padding-top: 15px;
 height: 510px;
+width: 1131px;
+border-radius: 5px;
 }
 
-.row.find {
-  margin-top: 75px;
-  margin-right: 100px;
-  margin-left: 100px;
-  position: absolute;
-  z-index: 1;
-  width: 1000px;
-  height: 300px;
+
+.container.cover {
+padding-top: 70px;
+padding-bottom: 100px;
+border-radius: 5px;
+border: solid white;
+top: 70px;
+left: 55px;
+position: absolute;
+height: 87%;
 }
 
+.panel-primary {
+border-color: #428bca;
+position: absolute;
+right: 17px;
+width: 300px;
+height: 473px;
+}
+
+.panel-success {
+border-color: #d6e9c6;
+position: absolute;
+width: 780px;
+height: 473px;
+}
 
 /*Login page css*/
 
@@ -377,12 +392,12 @@ height: 510px;
 }
 
 .login {
-border-right: 3px solid black;
-border-bottom: 3px solid black;
+border-right: 3px solid white;
+border-bottom: 3px solid white;
 top: 48px;
 left: 7px;
 position: absolute;
-width: 878px;
+width: 1034px;
 height: 380px;
 }
 
@@ -391,9 +406,9 @@ position: absolute;
 width: 360px;
 padding-left: 10px;
 padding-right: 10px;
-left: 390px;
+left: 445px;
 top: 277px;
-border-color: black;
+border-color: white;
 border-width: 2px;
 z-index: 1;
 }
@@ -403,9 +418,9 @@ position: absolute;
 width: 360px;
 padding-left: 10px;
 padding-right: 10px;
-left: 390px;
+left: 445px;
 top: 315px;
-border-color: black;
+border-color: white;
 border-width: 2px;
 z-index: 1;
 }
@@ -413,7 +428,7 @@ z-index: 1;
 .sidebutton {
 transform: rotate(90deg);
 position: absolute;
-left: 730px;
+left: 785px;
 top: 300px;
 width: 74px;
 border-radius: 5px;
@@ -425,10 +440,10 @@ z-index: 1;
 
 .login-title {
 width: 109px;
-padding-left: 581px;
+padding-left: 570px;
 padding-top: 126px;
-border: solid;
-left: 291px;
+border: solid white;
+left: 346px;
 top: 228px;
 position: absolute;
 }
@@ -436,7 +451,7 @@ position: absolute;
 .in {
   font-size: 17px;
   color: #FF9D2E;
-  font-family: Megrim;
+  font-family: Droid Sans Mono;
   padding-left: 50px;
 }
 
@@ -444,35 +459,27 @@ position: absolute;
 
 .panel.panel-default.create1 {
   border:none;
-  border-right: 3px solid #1E4E66;
-  border-bottom: 3px solid #1E4E66;
-  border-radius: 0px;
   height: 350px;
   margin-left: 35px;
-  background: #FFFFFD;
+  background: #E9E9E9;
 }
 
 .panel.panel-default.create2 {
-  border:none;
-  border-right: 3px solid #1E4E66;
-  border-top: 3px solid #1E4E66;
-  border-radius: 0px;
-  height: 350px;
-  margin-left: 35px;
-  background: #FFFFFD;
+border: none;
+height: 350px;
+margin-left: 35px;
+background: #E9E9E9;
 }
 
 .container.create_page {
-border-left: 3px solid black;
-border-top: 3px solid black;
-border-radius: 0px;
-float: right;
-width: 720px;
+background: #E9E9E9;
+width: 700px;
 height: 720px;
 margin-right: 39px;
 position: absolute;
 left: 400px;
 top: 0px;
+
 }
 
 
@@ -543,13 +550,13 @@ top: 0px;
 }
 
 .panel-title {
-    font-family: 'Pacifico';
+    font-family: Droid Sans Mono;
     color: #FFFFFF;
     font-size: 20px;
 }
 
 .title_instruction {
-    font-family: 'Pacifico';
+    font-family: Droid Sans Mono;
     color: #0A516D;
     padding-left: 35px;
     font-size: 45px;
@@ -558,7 +565,6 @@ top: 0px;
 }
 
 .panel-body.image{
-    border: 10px solid #0A516D;
     border-radius: 7px;
     padding: 4px;
     margin-right: 7px;
@@ -568,7 +574,6 @@ top: 0px;
 img {
     max-width: 100%;
     max-height: 100%;
-
 }
 
 

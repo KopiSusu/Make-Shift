@@ -12,4 +12,11 @@ class Project < ActiveRecord::Base
   has_many :join_guides
 
   validates_presence_of :name, :rating
+
+  private
+
+  def self.search(search)
+  search_condition = "%" + search + "%"
+  find(:all, :conditions => ['name LIKE ? OR description LIKE ?', search_condition, search_condition])
+  end
 end

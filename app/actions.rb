@@ -13,11 +13,6 @@ get '/profile' do
   erb :'projects/profile'
 end
 
-get '/found/:id' do
-  @materials = Material.find(params[:id])
-  erb :'/projects/found'
-end
-
 
 
 get '/project' do
@@ -35,6 +30,11 @@ get '/find' do
 	@material = Material.all
   erb :'projects/find'
   
+end
+
+get '/results' do
+  @materials = Material.find(params[:id])
+  erb :'/projects/results'
 end
 
 
