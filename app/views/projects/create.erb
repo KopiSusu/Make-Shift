@@ -1,32 +1,52 @@
 <body>
-
 <div class="container overall">
-<div class="col-md-4">
+  <div class="col-md-4">
 
-<div class="panel panel-default create2">
-  <div class="panel-body">
-    <button class="button" type="submit"> ADD IMAGE </button>
-    <input class="textbox"type="text" placeholder="Image URL"> 
-  </div>
-</div>
+    <form action ='/project' method='post'>
+      <div class="panel panel-default create2">
+        <div class="panel-body">
+          <!-- <button class="button" type="submit"> ADD IMAGE </button> -->
+          <input class="textbox"type="text" placeholder="Image URL"> 
+        </div>
+      </div>
 
 
-<div class="panel panel-default create1">
-  <div class="panel-heading">
-    <button class="button" type="submit"> ADD MATERIAL </button>
-    <input class="textbox"type="text"> 
-  </div>
-    <div class="panel-body">
+    <div class="panel panel-default create1">
+      <div class="panel-heading">
+        <!-- <button class="button" type="submit"> ADD MATERIAL </button> -->
+        <select name="materials[name][]" class='materials' multiple>
+        <% @materials.each do |x| %>
+          <option value="<%=x.id%>"><%=x.name%></option>
+        <%end%>
+        </select>
+        <!-- <button class="button" type="submit"> ADD TYPE </button> -->
+        <select name="types[name][]" class = 'type' multiple>
+        <% @types.each do |x| %>
+          <option value="<%=x.id%>"><%=x.name%></option>
+        <%end%>
+        </select>
+      </div>
+        <div class="panel-body"></div>
     </div>
+
+
+    <div class="container create_page">
+          <input class="textbox" name="name" type='text' placeholder="name">
+
+          <input class="textbox step1" name="steps[instruction][]" type='text' placeholder="step 1">
+          <input class="textbox step2" name="steps[instruction][]" type='text' placeholder="step 2">
+          <input class="textbox step3" name="steps[instruction][]" type='text' placeholder="step 3">
+          <input class="textbox step4" name="steps[instruction][]" type='text' placeholder="step 4">
+          <input class="textbox step5" name="steps[instruction][]" type='text' placeholder="step 5">
+          <input class="textbox step6" name="steps[instruction][]" type='text' placeholder="step 6">
+          <input class="button" type='submit'>
+    </div>
+    </form>
+
   </div>
 </div>
 
-<div class="container create_page">
-  <div class="row">
-    <div class="col-md-6 instruction_title"><p></p></div>
-  </div>
-</div>
-</div>
+
 
 </body>
 

@@ -1,13 +1,13 @@
 $(document).ready(function() {
 
 
-$(window).bind('scroll', function () {
+  $(window).bind('scroll', function () {
     if ($(window).scrollTop() < 17) {
         $('.navbar').removeClass('fixed');
     } else {
         $('.navbar').addClass('fixed');
     }
-});
+  });
 
 
   // var glassUp = false;
@@ -60,13 +60,8 @@ $(window).bind('scroll', function () {
     }
   });
 
-// $(window).scroll(function () {
-//     winHeight = $(window).height();
-//     if ($(window).scrollTop() > winHeight) {
-//         $('.navbar').css('position', 'fixed');
-//         $('.navbar').css('top', '0');
-//     }
-// });
+
+
 
 
 });

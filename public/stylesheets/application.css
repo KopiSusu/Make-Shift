@@ -20,10 +20,10 @@ body {
   z-index: -1;
 }
 
-.navitem:hover {
+/*.navitem:hover {
   height: 276px;
   transition: all 0.3s linear;
-}
+}*/
 
 
 .navbar {
@@ -463,13 +463,16 @@ position: absolute;
 }
 
 .container.create_page {
-  border-left: 3px solid black;
-  border-top: 3px solid black;
-  border-radius: 0px;
-  float: right;
-  width: 720px;
-  height: 720px;
-  margin-right: 39px;
+border-left: 3px solid black;
+border-top: 3px solid black;
+border-radius: 0px;
+float: right;
+width: 720px;
+height: 720px;
+margin-right: 39px;
+position: absolute;
+left: 400px;
+top: 0px;
 }
 
 
@@ -486,8 +489,7 @@ position: absolute;
     margin-top: 10px;
   } 
 
-
-  #### Dustin, Project Layout Page: Image, instructions, materials ###
+/*dustins stuff some more*/
 
 /*.col-md-6 ol {
     padding: 3px ;
@@ -522,7 +524,7 @@ position: absolute;
     font-weight: bold;
 }
 
-.panel-default>.panel-heading {
+.panel-default.panel-heading {
     color: #FFFFFF;
     font-size: 1.2em;
     padding: 10px;

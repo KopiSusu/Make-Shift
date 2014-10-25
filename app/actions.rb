@@ -9,12 +9,18 @@ get '/' do
   erb :index
 end
 
+get '/profile' do
+  erb :'projects/profile'
+end
+
 get '/project' do
   @projects = Project.all
   erb :'projects/project'
 end
 
 get'/create' do
+  @types = Type.all
+  @materials = Material.all
   erb :'projects/create'
 end
 
@@ -24,13 +30,31 @@ get '/find' do
   
 end
 
-get '/project' do
-  erb :'projects/project'
-end
 
 get '/login' do
   erb :'projects/login'
 end
+
+post '/project' do
+  # binding.pry
+  @project = Project.new(name: params[:name], rating: 0, photo: params[:photo])
+  if @project.save
+    params[:materials][:name].each do |material_id|
+      @project.materials << Material.find(material_id)
+    end
+    params[:steps][:instruction].each do |instructions|
+      @project.guides << Guide.new(instruction: instructions)
+    end
+    params[:types][:name].each do |type_id|
+      @project.types << Type.find(type_id)
+    end
+    @project.users << current_user
+    redirect:"/project/#{@project.id}"
+  else
+    redirect:"/create"
+  end 
+end
+
 
 post '/login' do
   username = params[:username]
