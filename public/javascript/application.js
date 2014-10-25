@@ -60,13 +60,13 @@ $(window).bind('scroll', function () {
     }
   });
 
-$(window).scroll(function () {
-    winHeight = $(window).height();
-    if ($(window).scrollTop() > winHeight) {
-        $('.navbar').css('position', 'fixed');
-        $('.navbar').css('top', '0');
-    }
-});
+// $(window).scroll(function () {
+//     winHeight = $(window).height();
+//     if ($(window).scrollTop() > winHeight) {
+//         $('.navbar').css('position', 'fixed');
+//         $('.navbar').css('top', '0');
+//     }
+// });
 
 
 });
