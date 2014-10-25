@@ -1,12 +1,13 @@
 	<div class="row find">
-		<form>
+		<form name="input" action="found.erb" method="get">
 			<div class="col-md-4 row-padded border-radius find1"> 
 				<div class="panel panel-primary">
 					<div class="panel-heading">
 						<h2 class="panel-title">Search</h2>
+
 					</div>
 					<div class="panel-body-checked">
-						this is where your search goes
+						<input type="submit" value="submit">
 					</div>
 				</div>
 				<div class="panel panel-success">
@@ -16,7 +17,7 @@
 					<div class="panel-body" style="min-height: 100px; max-height: 100px; overflow-y: scroll">
 						<% @material.each do |m| %> 
 						<div>
-							<input type="checkbox" class="checkboxes" value="<%= m.name %>" name="<%= m.name %>" >
+							<input type="checkbox" class="checkboxes" value="<%= m.name %>" name="<%= m.id %>" >
 							<%= m.name %> 
 						</div>
 						<% end %>

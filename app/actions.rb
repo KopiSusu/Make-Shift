@@ -13,6 +13,13 @@ get '/profile' do
   erb :'projects/profile'
 end
 
+get '/found/:id' do
+  @materials = Material.find(params[:id])
+  erb :'/projects/found'
+end
+
+
+
 get '/project' do
   @projects = Project.all
   erb :'projects/project'
