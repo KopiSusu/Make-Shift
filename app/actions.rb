@@ -32,10 +32,18 @@ get '/find' do
   
 end
 
-get '/results' do
-  @materials = Material.find(params[:id])
-  erb :'/projects/results'
+post '/find' do
+  # @material = Material.all
+  @search = Project.all
+  where_clause = params[:array_data].split(/,/)
+  @search.where(:materials => where_clause)
+  redirect '/find'  
 end
+
+# get '/results' do
+#   @materials = Material.find(params[:id])
+#   erb :'/projects/results'
+# end
 
 
 get '/login' do
@@ -43,7 +51,7 @@ get '/login' do
 end
 
 post '/project' do
-  # binding.pry
+  binding.pry
   @project = Project.new(name: params[:name], rating: 0, photo: params[:photo])
   if @project.save
     params[:materials][:name].each do |material_id|

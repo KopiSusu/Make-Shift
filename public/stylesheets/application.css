@@ -226,22 +226,22 @@ z-index: 1000;
 
 .panel.panel-default.one {
 border: none;
-border-radius: 0px;
+border-radius: 22px;
 margin-left: 35px;
 background: #FFFFFD;
-padding-bottom: 7px;
+padding-bottom: 0px;
 }
 
 .panel.panel-default.two {
   border:none;
-  border-radius: 0px;
+  border-radius: 22px;
   height: 450px;
   margin-left: 35px;
   background: #FFFFFD;
 }
 
 .container.product_page {
-border-radius: 0px;
+border-radius: 22px;
 float: right;
 width: 720px;
 height: 819px;
@@ -370,18 +370,18 @@ height: 87%;
 }
 
 .panel-primary {
-border-color: #428bca;
 position: absolute;
 right: 17px;
 width: 300px;
-height: 473px;
+height: 100px;
+border-radius: 22px;
 }
 
 .panel-success {
-border-color: #d6e9c6;
 position: absolute;
-width: 780px;
-height: 473px;
+width: 300px;
+height: 150px;
+border-radius: 22px;
 }
 
 /*Login page css*/
@@ -449,52 +449,79 @@ position: absolute;
 }
 
 .in {
-  font-size: 17px;
-  color: #FF9D2E;
-  font-family: Droid Sans Mono;
-  padding-left: 50px;
+    font-size: 17px;
+    color: #FF9D2E;
+    font-family: Droid Sans Mono;
+    padding-left: 50px;
 }
 
 /*create page*/
 
 .panel.panel-default.create1 {
-  border:none;
-  height: 350px;
-  margin-left: 35px;
-  background: #E9E9E9;
+    border-radius: 22px;
+    height: 350px;
+    margin-left: 35px;
+    background: #E9E9E9;
 }
 
 .panel.panel-default.create2 {
-border: none;
-height: 350px;
-margin-left: 35px;
-background: #E9E9E9;
+    border-radius: 22px;
+    height: 350px;
+    margin-left: 35px;
+    background: #E9E9E9;
 }
 
 .container.create_page {
-background: #E9E9E9;
-width: 700px;
-height: 720px;
-margin-right: 39px;
-position: absolute;
-left: 400px;
-top: 0px;
-
+    border-radius: 22px;
+    background: #E9E9E9;
+    width: 700px;
+    height: 720px;
+    margin-right: 39px;
+    position: absolute;
+    left: 400px;
+    top: 0px;
 }
 
+.material-type {
+  border: 2px solid #FF9D2E;
+  width: 130px;
+  margin-right: 3px;
+  margin-left: 3px;
+  border-radius: 10px;
+  padding-left: 4px;
+}
+
+.submit {
+    background-color:#FF9D2E;
+    color: #FFFFFF;
+    text-align: center;
+    border-radius: 5px;
+    display:block; /* change this from inline-block */
+    width:20%; /* setting the width */
+    margin:0 auto; /* this will center  it */
+    position:relative;
+}
 
 .textbox { 
+    background: white;
     border: 1px solid #848484; 
     -webkit-border-radius: 30px; 
     -moz-border-radius: 30px; 
     border-radius: 30px; 
     outline:0; 
     height:25px; 
-    width: 275px; 
+    width: 100%; 
     padding-left:10px; 
     padding-right:10px; 
     margin-top: 10px;
+    margin-bottom: 12px;
   } 
+
+.instruction-heading {
+  text-align: center;
+  color: #FF9D2E;
+  padding: 4px;
+}
 
 /*dustins stuff some more*/
 
@@ -511,7 +538,7 @@ top: 0px;
 }
 
 .col-md-12 li {
-    color: #0A516D;
+    color: #FF9D2E;
     font-size: 20px;
     font-weight: bold;
     margin-right: 25px;
@@ -519,10 +546,10 @@ top: 0px;
     padding: 10px;
     padding-left: 15px;
     padding-right: 10px;
-    border: solid 4px #0A516D;
+    border: solid 4px #FF9D2E;
     border-radius: 7px;
     margin-bottom: 10px;
-    background-color: #0A516D;
+    background-color: #FF9D2E;
 }
 
 .color_text {
@@ -536,12 +563,17 @@ top: 0px;
     font-size: 1.2em;
     padding: 10px;
     padding-left: 15px;
-    border: solid 4px #0A516D;
+    border: solid 4px #FF9D2E;
     border-radius: 7px;
     margin-top: 7px;
     margin-right: 7px;
     margin-bottom: 10px;
-    background-color: #0A516D;
+    background-color: #FF9D2E;
+}
+
+.panel-heading {
+  border-top-left-radius: 22px;
+  border-top-right-radius: 22px;
 }
 
 .material_list_font {
@@ -550,32 +582,51 @@ top: 0px;
 }
 
 .panel-title {
-    font-family: Droid Sans Mono;
+    /*font-family: Droid Sans Mono;*/
     color: #FFFFFF;
     font-size: 20px;
 }
 
 .title_instruction {
-    font-family: Droid Sans Mono;
-    color: #0A516D;
+    /*font-family: Droid Sans Mono;*/
+    color: #FF9D2E;
     padding-left: 35px;
     font-size: 45px;
     margin-bottom: 0;
 
 }
 
-.panel-body.image{
+/*.panel-body.image{
     border-radius: 7px;
     padding: 4px;
-    margin-right: 7px;
+    margin-right: 1px;
 
-}
+}*/
 
 img {
     max-width: 100%;
     max-height: 100%;
+    border-radius: 22px;
+    margin: 0 auto;
+    border: 10px solid #FF9D2E
 }
 
+.panel-heading-three {
+  background-color: #FF9D2E;
+  border: 3px solid white;
+  height: 40px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  text-align: center;
+  padding: 4px;
+}
+
+/*.panel-default>.panel-heading {
+color: #333;
+background-color: none;
+border-color: none;
+}
+*/
 
 
 

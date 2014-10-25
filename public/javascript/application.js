@@ -49,7 +49,8 @@ $(document).ready(function() {
     if (x.indexOf($(this).attr('value')) == -1)
     {
       x.push($(this).attr('value'));
-      $(".panel-body-checked").append("<p class=\"checked\" data-value="+$(this).attr('value')+">"+$(this).attr('value')+"</p>");
+      $("#form_array")[0].value = x;
+      $(".panel-body-checked").append("<p class=\"checked\" name=\"search\" data-value="+$(this).attr('value')+">"+$(this).attr('value')+"</p>");
     }
     else{
       removeable = $(".checked[data-value^='"+$(this).attr('value')+"']");
