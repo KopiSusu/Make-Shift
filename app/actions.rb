@@ -33,16 +33,12 @@ get '/find' do
 end
 
 post '/find' do
-  # @material = Material.all
-  @search = Project.all
+  search = Project.all
   where_clause = params[:array_data].split(/,/)
-  search_projects = @search.joins(:materials).where('materials.name' => where_clause)
-  search_projects.each do |row|
-    row.inspect
-  end
-  binding.pry
-  redirect '/find'  
+  @search_projects = search.joins(:materials).where('materials.name' => where_clause)
+  erb :"/projects/result"
 end
+
 
 # search_projects = project.joins(:materials).where('materials.name = "wood"')
 
@@ -51,7 +47,6 @@ end
 # end
 
 get '/result' do
-  # @materials = Material.find(params[:id])
   erb :'/projects/result'
 end
 
