@@ -401,6 +401,16 @@ width: 1034px;
 height: 380px;
 }
 
+.create-user {
+  border-right: 3px solid white;
+  border-bottom: 3px solid white;
+  top: 48px;
+  left: 7px;
+  position: absolute;
+  width: 1034px;
+  height: 424px;
+}
+
 .username {
 position: absolute;
 width: 360px;
@@ -448,11 +458,41 @@ top: 228px;
 position: absolute;
 }
 
+.create-title {
+width: 109px;
+padding-left: 570px;
+padding-top: 126px;
+border: solid white;
+left: 346px;
+top: 228px;
+position: absolute;
+height: 176px;
+}
+
 .in {
     font-size: 17px;
     color: #FF9D2E;
     font-family: Droid Sans Mono;
     padding-left: 50px;
+}
+
+.signup.click {
+  position: absolute;
+  top: 354px;
+  left: 487px;
+  color: #FFFFFD;
+}
+
+.email {
+  position: absolute;
+  width: 360px;
+  padding-left: 10px;
+  padding-right: 10px;
+  left: 445px;
+  top: 353px;
+  border-color: white;
+  border-width: 2px;
+  z-index: 1;
 }
 
 /*create page*/

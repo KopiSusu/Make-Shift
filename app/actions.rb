@@ -89,3 +89,19 @@ get '/project/:id' do
   erb :'projects/project'
 end
 
+get '/create_user' do
+  erb :'projects/create_user'
+end
+
+post '/create_user' do
+  username = params[:username]
+  password = params[:password]
+  email = params[:email]
+
+  user = User.create(username: username, password: password, email: email)
+
+  redirect '/'
+end
+
+
+
