@@ -13,10 +13,17 @@ class Project < ActiveRecord::Base
 
   validates_presence_of :name, :rating
 
-  private
+  # private
 
-  def self.search(search)
-  search_condition = "%" + search + "%"
-  find(:all, :conditions => ['name LIKE ? OR description LIKE ?', search_condition, search_condition])
+  # def self.search(search)
+  # search_condition = "%" + search + "%"
+  # find(:all, :conditions => ['name LIKE ? OR description LIKE ?', search_condition, search_condition])
+  # end
+
+  def match_materials?(other_materials=[])
+    intersection = Set.new(self.materials) & other_materials  ## returns materials that are in both self.materials and search_materials
+    intersection.count > 0 ? true : false
   end
+
+
 end

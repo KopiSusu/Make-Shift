@@ -36,14 +36,24 @@ post '/find' do
   # @material = Material.all
   @search = Project.all
   where_clause = params[:array_data].split(/,/)
-  @search.where(:materials => where_clause)
+  search_projects = @search.joins(:materials).where('materials.name' => where_clause)
+  search_projects.each do |row|
+    row.inspect
+  end
+  binding.pry
   redirect '/find'  
 end
 
-# get '/results' do
-#   @materials = Material.find(params[:id])
-#   erb :'/projects/results'
+# search_projects = project.joins(:materials).where('materials.name = "wood"')
+
+# search_projects.each do |row|
+#   row.inspect
 # end
+
+get '/result' do
+  # @materials = Material.find(params[:id])
+  erb :'/projects/result'
+end
 
 
 get '/login' do
