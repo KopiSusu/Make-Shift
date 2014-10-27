@@ -1,12 +1,22 @@
 <div class="container result">
   <form class="display" role="form" action="/result" method="get">
-    <div class = "result_one">
-      <% @search_projects.each do |m| %> 
-        <div>
-          <img src= "<%= m.photo %>">
+   <!--  <div class = "result_one"> -->
+    <div class="container results-grid">
+      <h3 class="results-heading">We Found These For You:</h3>
+        <div class="row profile-grid">
+          <% @search_projects.each do |m| %>
+              <div class="col-md-4 results-grid">
+              <img class="image-results-thumbs"src= "<%= m.photo %>"><br> 
           <%= m.name %> 
+            </div>
         </div>
       <% end %>
     </div>
   </form>
 </div>
+
+
+   
+        
+           
+           

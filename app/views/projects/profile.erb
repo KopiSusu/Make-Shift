@@ -3,25 +3,35 @@
   <div class="col-md-4">
 
     <form action ='/project' method='post'>
-      <div class="panel panel-default create2">
+      <div class="panel panel-login-top-left">
         <div class="panel-body">
         
           <h3 class="instruction-heading">My Profile</h3>
-            <h4>Logged in as:   <%=session[:user]%></h4>
+            <!-- <h4 class="profile-centering">Logged in as:</h4> -->
+            <h2 class="logged-in-profile"><%=session[:user]%></h2>
         </div>
       </div>
 
 
-    <div class="panel panel-default create1">
+    <div class="panel hidden_shit_balls">
       
          
     </div>
 
 
-    <div class="container create_page">
+    <div class="container current_projects_grid">
 
       <h3 class="instruction-heading">Projects I'm Working On</h3>
-
+        <div class="row profile-grid">
+        
+            <% @projects.each do |x| %>
+            <div class="col-md-4 profile-grid">
+              <img class="image-profile-thumbs"src= "<%= x.photo %>"><br>
+              <%= x.name %>
+            </div>
+            <%end%>
+          
+        </div>
     </div>
     </form>
 

@@ -10,6 +10,7 @@ get '/' do
 end
 
 get '/profile' do
+  @projects = Project.all
   erb :'projects/profile'
 end
 
