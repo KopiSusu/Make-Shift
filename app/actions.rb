@@ -11,6 +11,7 @@ end
 
 get '/profile' do
   @projects = Project.all
+  @current = current_user.projects
   erb :'projects/profile'
 end
 
