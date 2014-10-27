@@ -26,7 +26,7 @@
         
             <% @projects.each do |x| %>
             <div class="col-md-4 profile-grid">
-              <img class="image-profile-thumbs"src= "<%= x.photo %>"><br>
+              <a href="/project/<%=x.id%>"><img class="image-profile-thumbs"src= "<%= x.photo %>"></a><br>
               <%= x.name %>
             </div>
             <%end%>

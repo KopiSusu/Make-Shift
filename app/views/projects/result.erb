@@ -6,7 +6,7 @@
         <div class="row profile-grid">
           <% @search_projects.each do |m| %>
               <div class="col-md-4 results-grid">
-              <img class="image-results-thumbs"src= "<%= m.photo %>"><br> 
+             <a href="/project/<%=m.id%>"><img class="image-results-thumbs"src= "<%= m.photo %>"></a><br> 
           <%= m.name %> 
             </div>
         </div>
