@@ -1,6 +1,5 @@
 /*Search bar at the top of all screens*/
 body {
-  /*background: white;*/
   background: url(http://www.guillaumebouvet.com/assets/w1200-q85-p1/bg_home.jpg);
   background-position: center;
     background-repeat: no-repeat;
@@ -25,11 +24,6 @@ width: 190px;
 z-index: -1;
 background: white;
 }
-
-/*.navitem:hover {
-  height: 276px;
-  transition: all 0.3s linear;
-}*/
 
 
 .navbar {
@@ -93,33 +87,6 @@ input:hover {
 }
 
 
-/*.image {
-  background-image: url("http://www.iconsdownload.net/icons/24/6606-light-bulb-off.png");
-  position: absolute;
-  height: 64px;
-  width: 53px;
-  right: 578px;
-  transform: rotate(180deg);
-}
-
-.image1 {
-  background-image: url("http://www.iconsdownload.net/icons/24/6606-light-bulb-off.png");
-  position: absolute;
-  height: 64px;
-  width: 53px;
-  right: 374px;
-  transform: rotate(180deg);
-}
-
-.image2 {
-  background-image: url("http://www.iconsdownload.net/icons/24/6606-light-bulb-off.png");
-  position: absolute;
-  height: 64px;
-  width: 53px;
-  right: 171px;
-  transform: rotate(180deg);
-}*/
-
 /*Bottom bar at the bottom of all screens*/
 
 .container.main{
@@ -169,41 +136,6 @@ z-index: 1000;
   height: 100%;
   transition: all 0.5s ease-out
 }
-
-/*.toggle {
-  position: absolute;
-  left: -4px;
-  top: -30px;
-  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/28727/double-chevron-up.svg');
-  content: ' ';
-  display: block;
-  width: 5.7rem;
-  height: 6rem;
-  opacity: 0.9;
-  cursor: pointer;
-  transition: transform 0.3s ease-out 0.1s;
-}*/
-
-/*.aftertoggle {
-  transform: rotate(180deg);
-  transition: transform 0.3s ease-out 0.5s; 
-}
-
-.togglebottom {
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  border-style: solid;
-  border-color: black;
-  background-color: #FFFFFD;
-  bottom: 2px;
-  left: 20px;
-  opacity: 1;
-  z-index: 1;
-  margin-left: -10px;
-  transition: all 0.5s ease-out;
-}*/
 
 .side {
   z-index: -1;
@@ -371,17 +303,28 @@ height: 87%;
 
 .panel-primary {
 position: absolute;
-right: 17px;
+right: 250px;
 width: 300px;
-height: 100px;
-border-radius: 22px;
+padding-bottom: 50px;
+top:170px;
+border-color: white;
 }
 
 .panel-success {
 position: absolute;
 width: 300px;
 height: 150px;
-border-radius: 22px;
+left: 250px;
+top: 170px;
+}
+
+.panel-heading-three {
+background-color: white;
+color: #424242;
+height: 40px;
+text-align: center;
+padding: 4px;
+border-bottom: 2px #424242 solid;
 }
 
 /*Login page css*/
@@ -499,34 +442,33 @@ height: 176px;
 
 .panel.panel-default.create1 {
     border-radius: 10px;
-    height: 350px;
+    height: 200px;
     margin-left: 35px;
-    background: rgba(200, 204, 204, 0.9);
+background: rgba(0, 0, 0, 0.6);
 }
 
 .panel.panel-default.create2 {
-    border-radius: 10px;
-    height: 350px;
-    margin-left: 35px;
-    background: rgba(200, 204, 204, 0.9);
+border-radius: 10px;
+height: 150px;
+margin-left: 35px;
+background: rgba(0, 0, 0, 0.6);
 }
 
 .container.create_page {
-    border-radius: 10px;
-    background: rgba(200, 204, 204, 0.9);
-    width: 700px;
-    height: 720px;
-    margin-right: 39px;
-    position: absolute;
-    left: 400px;
-    top: 0px;
+border-radius: 10px;
+background: rgba(0, 0, 0, 0.6);
+width: 700px;
+margin-right: 39px;
+position: absolute;
+left: 400px;
+top: 0px;
+padding-bottom: 20px;
 }
 
 .material-type {
-  border: 2px solid #FF9D2E;
   width: 130px;
   margin-right: 3px;
-  margin-left: 3px;
+  margin-left: 15px;
   border-radius: 10px;
   padding-left: 4px;
 }
@@ -544,22 +486,23 @@ height: 176px;
 
 .textbox { 
     background: white;
-    border: 1px solid #848484; 
+    border: 1px solid; 
     -webkit-border-radius: 30px; 
     -moz-border-radius: 30px; 
     border-radius: 30px; 
     outline:0; 
     height:25px; 
-    width: 100%; 
+    width: 60%; 
     padding-left:10px; 
     padding-right:10px; 
     margin-top: 10px;
     margin-bottom: 12px;
+    margin-left: 20%;
   } 
 
 .instruction-heading {
   text-align: center;
-  color: #FF9D2E;
+  color: white;
   padding: 4px;
 }
 
@@ -589,30 +532,30 @@ height: 176px;
     margin-top: 25px;
     padding: 10px;
     padding-left: 15px;
-    padding-right: 10px;
-    border: solid 4px #FF9D2E;
-    border-radius: 7px;
-    margin-bottom: 10px;
-    background-color: #FF9D2E;
+  padding-right: 10px;
+  border: solid 4px #FF9D2E;
+  border-radius: 7px;
+  margin-bottom: 10px;
+  background-color: #FF9D2E;
 }
 
 .color_text {
-    color: #FFFFFF;
-    font-size: 15px;
-    font-weight: bold;
+  color: #FFFFFF;
+  font-size: 15px;
+  font-weight: bold;
 }
 
 .panel-default.panel-heading {
-    color: #FFFFFF;
-    font-size: 1.2em;
-    padding: 10px;
-    padding-left: 15px;
-    border: solid 4px #FF9D2E;
-    border-radius: 7px;
-    margin-top: 7px;
-    margin-right: 7px;
-    margin-bottom: 10px;
-    background-color: #FF9D2E;
+  color: #FFFFFF;
+  font-size: 1.2em;
+  padding: 10px;
+  padding-left: 15px;
+  border: solid 4px;
+  border-radius: 7px;
+  margin-top: 7px;
+  margin-right: 7px;
+  margin-bottom: 10px;
+  background-color: #FF9D2E;
 }
 
 .panel-heading {
@@ -620,80 +563,59 @@ height: 176px;
   border-top-right-radius: 22px;
 }
 
+.panel-default {
+border-color: rgba(42, 42, 42, 0.6) ;
+}
+
 .material_list_font {
-    font-style: bold;
-    font-size: 15px;
+  font-style: bold;
+  font-size: 15px;
 }
 
 .panel-title {
-    /*font-family: Droid Sans Mono;*/
-    color: #FFFFFF;
-    font-size: 20px;
+  color: #424242;
+  font-size: 20px;
 }
 
 .title_instruction {
-    /*font-family: Droid Sans Mono;*/
-    color: #FF9D2E;
-    padding-left: 35px;
-    font-size: 45px;
-    margin-bottom: 0;
+  color: #FF9D2E;
+  padding-left: 35px;
+  font-size: 45px;
+  margin-bottom: 0;
 
 }
 
-/*.panel-body.image{
-    border-radius: 7px;
-    padding: 4px;
-    margin-right: 1px;
-
-}*/
 
 img {
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 22px;
-    margin: 0 auto;
-    border: 10px solid #FF9D2E
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 22px;
+  margin: 0 auto;
+  border: 10px solid #FF9D2E
 }
-
-.panel-heading-three {
-  background-color: #FF9D2E;
-  border: 3px solid white;
-  height: 40px;
-  border-top-right-radius: 20px;
-  border-top-left-radius: 20px;
-  text-align: center;
-  padding: 4px;
-}
-
-/*.panel-default>.panel-heading {
-color: #333;
-background-color: none;
-border-color: none;
-}
-*/
 
 /*results page*/
 
 .container.result {
-padding-top: 70px;
-padding-bottom: 100px;
-border-radius: 5px;
-border: solid white;
-top: 70px;
-left: 55px;
-bottom: 0;
-position: absolute;
+  padding-top: 70px;
+  padding-bottom: 100px;
+  border-radius: 5px;
+  border: solid white;
+  top: 70px;
+  left: 55px;
+  bottom: 0;
+  position: absolute;
 }
 
 .result_one {
-background: #E9E9E9;
-margin-right: 39px;
-margin: 10px;
-position: absolute;
-left: 0px;
-right: 0px;
-top: 0px;
-bottom: 0px;
+  background: #E9E9E9;
+  margin-right: 39px;
+  margin: 10px;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
 }
 
 

@@ -13,8 +13,6 @@ get '/profile' do
   erb :'projects/profile'
 end
 
-
-
 get '/project' do
   @projects = Project.all
   erb :'projects/project'
@@ -28,35 +26,24 @@ end
 
 get '/find' do
 	@material = Material.all
-  erb :'projects/find'
-  
+  erb :'projects/find'  
 end
 
 post '/find' do
-  search = Project.all
   where_clause = params[:array_data].split(/,/)
-  @search_projects = search.joins(:materials).where('materials.name' => where_clause)
+  @search_projects = Project.where('materials.name' => where_clause).joins(:materials).group('id')
   erb :"/projects/result"
 end
-
-
-# search_projects = project.joins(:materials).where('materials.name = "wood"')
-
-# search_projects.each do |row|
-#   row.inspect
-# end
 
 get '/result' do
   erb :'/projects/result'
 end
-
 
 get '/login' do
   erb :'projects/login'
 end
 
 post '/project' do
-  binding.pry
   @project = Project.new(name: params[:name], rating: 0, photo: params[:photo])
   if @project.save
     params[:materials][:name].each do |material_id|
@@ -74,7 +61,6 @@ post '/project' do
     redirect:"/create"
   end 
 end
-
 
 post '/login' do
   username = params[:username]
