@@ -713,6 +713,11 @@ background: rgba(0, 0, 0, 0.5);
   padding: 3px;
 }
 
+.logo-profile {
+  height: 200px;
+  width: 200px;
+}
+
 
 
 
