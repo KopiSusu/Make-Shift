@@ -6,7 +6,7 @@
       <div class="panel panel-login-top-left">
         <div class="panel-body">
         
-          <h3 class="instruction-heading">My Profile</h3>
+          <h3 class="myprofile-heading">My Profile</h3>
             <!-- <h4 class="profile-centering">Logged in as:</h4> -->
             <h2 class="logged-in-profile"><%=session[:user]%></h2>
         </div>
@@ -23,7 +23,7 @@
 
     <div class="container current_projects_grid">
 
-      <h3 class="instruction-heading">Projects I'm Working On</h3>
+      <h3 class="myprofile-heading">Projects I'm Working On</h3>
         <div class="row profile-grid">
         
             <% @projects.each do |x| %>
