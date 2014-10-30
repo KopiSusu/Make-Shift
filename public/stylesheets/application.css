@@ -613,10 +613,11 @@ img {
 }
 
 .row.profile-grid {
-  text-align: center;
-  font-family: 'Droid Mono Sans';
-  font-size: 15px;
-  padding: 5px;
+text-align: center;
+font-family: 'Droid Mono Sans';
+font-size: 15px;
+padding: 5px;
+color: white;
 }
 
 .col-md-4.profile-grid {
