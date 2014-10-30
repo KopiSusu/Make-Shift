@@ -1,5 +1,6 @@
 <div class="container cover">
 	<!-- <div class="row find"> -->
+	<div class ="title find"> <h1>Find new projects!</h1></div>
 		<form name="input" action="/find" method="post">
 			<div class="col-md-4 row-padded border-radius find1"> 
 				<div class="panel panel-primary">
@@ -9,7 +10,7 @@
 					</div>
 					<div class="panel-body-checked">
 						<input id="form_array" type="hidden" name="array_data" value="">
-						<input type="submit">
+						<input type="submit" class ="submit find" value="SEARCH!">
 					</div>
 				</div>
 				</form>
@@ -20,7 +21,7 @@
 					</div>
 					<div class="panel-body" style="min-height: 100px; max-height: 100px; overflow-y: scroll">
 						<% @material.each do |m| %> 
-						<div>
+						<div class="checker">
 							<input type="checkbox" class="checkboxes" value="<%= m.name %>" name="<%= m.id %>" >
 							<%= m.name %> 
 						</div>
