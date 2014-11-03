@@ -1,20 +1,11 @@
-Midterm!
+Make-Shift!
+=============
+HTML, SCSS, JQuery, Bootstrap, Sinatra
 =============
 
-Members:
-Ko, 
-Dustin, 
-Christian
+A do it yourself project app where you can create, share, and clone
+projects.
 
-Work devision
+_____________
 
-Front end
-------------
-
-
-UI interface?/experiance?
------------
-
-
-Back end
-------------
+Go to http://make-shift.herokuapp.com/ to check out the site!
