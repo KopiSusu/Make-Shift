@@ -1,7 +1,7 @@
 Make-Shift!
 =============
-HTML, SCSS, JQuery, Bootstrap, Sinatra
 =============
+HTML, SCSS, JQuery, Bootstrap, Sinatra
 
 A do it yourself project app where you can create, share, and clone
 projects.
